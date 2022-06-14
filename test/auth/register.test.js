@@ -20,7 +20,9 @@ describe('User', () => {
         email: 'tubagus@gmail.com',
         password: 'tubagus',
       })
-      .expect(201);
+      .then((res) => {
+        expect(res.statusCode).toBe(201);
+      });
   });
   it('Register user with same email', () => {
     return request(app)
