@@ -10,7 +10,7 @@ module.exports = {
   development: {
     username: DB_USER,
     password: DB_PASSWORD,
-    database: `${DB_NAME}_development`,
+    database: `${DB_NAME}`,
     host: DB_HOST,
     port: DB_PORT,
     dialect: "postgres",
@@ -47,6 +47,7 @@ module.exports = {
         require: true,
         rejectUnauthorized: false
       }
-    }
+    },
+    use_env_variable: "postgres://ldfamrxzuiheav:7fd746bb41541e7af5bbc89a4a22819d0c5a59efc3e91195c81b9cd251c388b1@ec2-52-72-99-110.compute-1.amazonaws.com:5432/dbk6amreilfclm"
   }
 }
