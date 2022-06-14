@@ -4,7 +4,6 @@ const {
   DB_NAME = "bcr",
   DB_HOST = "127.0.0.1",
   DB_PORT = "5432",
-  DATABASE_URL = "",
 } = process.env;
 
 module.exports = {
@@ -48,7 +47,6 @@ module.exports = {
         require: true,
         rejectUnauthorized: false
       }
-    },
-    use_env_variable: DATABASE_URL
+    }
   }
 }
